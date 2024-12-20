@@ -4,4 +4,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--c-fontColor1);
 }
+
+:root{
+    --font-base:"poppins",sans-serif;
+    --c-color1: #BADD7F;
+    --c-color2: #DDEEBF;
+    --c-color3: #FFFFFF;
+    --c-color4: #76A77B;
+    --c-color5: #FFB380;
+
+    --c-fontColor1: #344E36;
+    
+}
+
+.fill { 
+    min-height: 100%;
+}
+html, body {
+    height: 100%;
+    font-family: var(--font-base);
+    font-size: 16px;
+
+}
+
+.section{
+    height: 600px !important;
+   
+}
+
+.bg1{
+    background-color: #BADD7F;
+}
+
+.bg2{
+    background-color: #DDEEBF;
+}
+
+.bg3{
+    background-color: #FFFFFF;
+}
+.sidebarimg{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+.card-img-top{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.card1{
+    background-color: var(--c-color5);
+}
+
+a{
+    color: var(--c-fontColor1) !important;
+}
+
