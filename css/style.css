@@ -53,6 +53,9 @@ html, body {
 .card-img-top{
     height: 50px;
     width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     
 }
 
@@ -64,3 +67,15 @@ a{
     color: var(--c-fontColor1) !important;
 }
 
+.card2{
+    background-color: var(--c-color4);
+}
+
+.img-fluid{
+    height: 75px;
+    width: 150px;
+}
+
+.card3{
+    background-color: var(--c-color1);
+}
