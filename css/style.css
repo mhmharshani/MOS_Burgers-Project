@@ -1,81 +1,80 @@
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--c-fontColor1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--c-fontColor1);
+  font-family: var(--font-base);
 }
 
-:root{
-    --font-base:"poppins",sans-serif;
-    --c-color1: #BADD7F;
-    --c-color2: #DDEEBF;
-    --c-color3: #FFFFFF;
-    --c-color4: #76A77B;
-    --c-color5: #FFB380;
+:root {
+  --font-base: "poppins", sans-serif;
+  --c-color1: #badd7f;
+  --c-color2: #ddeebf;
+  --c-color3: #ffffff;
+  --c-color4: #76a77b;
+  --c-color5: #ffb380;
 
-    --c-fontColor1: #344E36;
-    
-}
-
-.fill { 
-    min-height: 100%;
-}
-html, body {
-    height: 100%;
-    font-family: var(--font-base);
-    font-size: 16px;
-
+  --c-fontColor1: #344e36;
 }
 
-.section{
-    height: 600px !important;
-   
+.navbar-header {
+  /* position: fixed; */
+  margin-left: 200px;
+  padding-left: 20px;
 }
 
-.bg1{
-    background-color: #BADD7F;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  padding-top: 20px;
+  background-color: var(--c-color2);
 }
 
-.bg2{
-    background-color: #DDEEBF;
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  color: var(--c-fontColor1);
+}
+.sidebar .description {
+  font-size: 14px;
+}
+.sidebar .nav-link:hover {
+  background-color: var(--c-color3);
 }
 
-.bg3{
-    background-color: #FFFFFF;
-}
-.sidebarimg{
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-}
-.card-img-top{
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    
+.icon-sidebar {
+  height: 24px;
+  width: 24px;
 }
 
-.card1{
-    background-color: var(--c-color5);
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.main-content {
+  height: 100%;
+  margin-left: 200px;
+  padding: 20px;
 }
 
-a{
-    color: var(--c-fontColor1) !important;
-}
-
-.card2{
-    background-color: var(--c-color4);
-}
-
-.img-fluid{
-    height: 75px;
-    width: 150px;
-}
-
-.card3{
-    background-color: var(--c-color1);
+@media (max-width: 575.98px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar .description {
+    display: none;
+  }
+  .sidebar .nav-link {
+    justify-content: center;
+  }
+  .main-content {
+    margin-left: 60px;
+  }
 }
