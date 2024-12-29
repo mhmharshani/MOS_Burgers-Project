@@ -22,22 +22,6 @@
         <span class="navbar-text lh-1 fs-6 my-0 me-5">
             <img src="img/brand/icon-profile.png" alt=""> Welcome, Manuja
           </span>
-
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul> -->
           <div class="input-group mb-4 me-2" style="width: 250px; height: 15px;">
             <button class="btn btn-search" type="button" id="button-addon1"><img src="img/brand/icon-search.png" alt="" height="24px" width="24px"></button>
             <input type="text" class="form-control btn-search" placeholder="Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
@@ -91,20 +75,151 @@
     <!-- aside bar end -->
 
 
-    <!-- main bar start -->
-      <main class="main-content">
-        <h2>This is the main content</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt alias numquam, quaerat recusandae culpa natus animi cum placeat odit facere beatae laudantium vitae commodi earum. Reprehenderit culpa perferendis necessitatibus maiores!</p>
+    <!-- main content start -->
+      <main class="main-content me-2">
+
+        <!-- breadcrumb start -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menu</li>
+          </ol>
+        </nav>
+        <!-- breadcrumb end -->
+
+        <!-- order list start -->
+        <h6 class="fw-bold">Order List</h6> 
+
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card h-50 card-order">
+                <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">ODR#00001 <span><a href="#" class="btn btn-order"><small> Ready</small></a></span></h5>
+                <p class="card-text"><small>4 items</small> </p>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card h-50 card-order">
+                <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">ODR#00002 <span><a href="#" class="btn btn-order"><small> Ready </small></a></span></h5>
+                <p class="card-text"><small>4 items</small> </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-50 card-order">
+                <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">ODR#00004 <span><a href="#" class="btn btn-order"><small>In Kitchen </small></a></span></h5>
+                <p class="card-text"><small>4 items</small> </p>
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+
+        <!-- order list end -->
+
+        <!-- categories start -->
+        <h6 class="fw-bold">Categories</h6> 
+
+        <ul class="nav nav-pills nav-justified flex-column flex-sm-row gap-2">
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><img src="img/brand/icon-burger.png" alt=""><br>Burger</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/brand/icon-burger.png" alt="" class="img-item"><br>Burger</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/brand/icon-submarine.png" alt="" class="img-item"><br>Submarine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/brand/icon-fries.png" alt="" class="img-item"><br>Fries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/brand/icon-pasta.png" alt="" class="img-item"><br>Pasta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/brand/icon-chicken.png" alt="" class="img-item"><br>Chicken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/brand/icon-beverage.png" alt="" class="img-item"><br>Beverages</a>
+          </li>
+          
+        </ul>
+
+        <!-- categories end -->
+
+        <!-- cards for categories start -->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col ">
+            <!-- <div class="card h-100 mt-3">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div> -->
+            <div class="card mb-3 mt-3 card-menu-item" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 img-menu-item ">
+                  <img src="img/home/1Classic_burger.png" class="img-fluid rounded-start " alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 16px; font-weight: bold;"> Classic Burger</h5>
+                    <p class="card-text" ></p><small>Rs.600</small></p>
+                    <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                    <div style="text-align: right;">
+                      <a href="#" class="btn btn-cart"><span> <small>ADD</small> <img src="img/brand/icon-cart.png" alt=""></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+
+          
+          
+        </div>
+
+        <!-- cards for categories end -->
+
+        
       </main>
-    <!-- main bar end -->
+    <!-- main content end -->
 
 
     <!-- right bar start -->
       <div class="rightBar">
-        <h2>This is the right bar</h2>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas provident possimus accusantium aspernatur repudiandae minus nesciunt deserunt, a voluptatem?</p>
+        <h5 class="card-title fs-6 fw-bold"><a href="#" class="btn btn-orderDetail"><small> Order Details </small></a> <span><img src="img/brand/icon-cart.png" alt="" class="mx-3"></span></h5>
+
+        <div class="item-cart rounded">
+
+          <p>ODR#00001 <img src="img/brand/icon-addUsers.png" alt="" class="img-users"></p>
+          
+        </div>
+
+        <div class="item-bill rounded">
+          
+        </div>
+
+        <h5 class="card-title fs-6 fw-bold mt-3"><a href="#" class="btn btn-orderDetail"><small> Pay Now </small></a> 
+
       </div>
+
+      
     <!-- right bar end -->
 
 
