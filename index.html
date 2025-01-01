@@ -39,7 +39,7 @@
      <aside>
         <div class="sidebar">
           <nav class="nav flex-column">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="Login.html">
               <span class="icon"><img src="img/brand/icon-home.png" alt="" class="icon-sidebar"></span>
               <span class="description">Home</span>
             </a>
@@ -208,10 +208,40 @@
         <div class="item-cart rounded">
 
           <p>ODR#00001 <img src="img/brand/icon-addUsers.png" alt="" class="img-users"></p>
+          <p>Customer ID : <span>0773456321</span></p>
+          <div class="card-cart-added " style="width: 12rem;">
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item item-cart-added">
+                <p class="added-item" id="itemName">Classic <span id="unitPrice">650.00</span> <span><input type="number" id="quantityInput" class="form-control mx-2 quantity " value="1"></span> <span><button type="button" class="btn-close" aria-label="Close"></button></span></p>
+                
+                <!-- <div class="quantity">
+                  <button class="btn btn-primary" id="minusBtn">-</button> -->
+                  
+                  <!-- <button class="btn btn-primary" id="plusBtn">+</button> -->
+                <!-- </div>   -->   
+              </li>
+              
+            </ul>
+          </div>
           
         </div>
 
         <div class="item-bill rounded">
+          <table class="table-bill" >
+            <tr>
+              <th scope="row">Sub Total</th>
+              <td>1500.00</td>  
+            </tr>
+            <tr>
+              <th scope="row">Discount</th>
+              <td>100.00</td>  
+            </tr>
+            <tr>
+              <th scope="row">Grand Total</th>
+              <td>1400.00</td>  
+            </tr>
+          </table>
           
         </div>
 
